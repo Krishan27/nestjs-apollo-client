@@ -1,0 +1,9 @@
+# src/spacex/spacex.graphql
+type Launch {
+  mission_name: String!
+  launch_date_utc: String!
+}
+
+type Query {
+  launches: [Launch!]!
+}

@@ -1,0 +1,14 @@
+schema: src/spacex.graphql
+documents: null
+generates:
+  src/spacex/generated.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+config:
+  namingConvention: {
+    enumValues: "upper-case#upperCase",
+    typeNames: "keep"
+  }
+  skipTypename: true
+  typesPrefix: "GQL"
